@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ShopBets10 — Fresh Flowers</title>
+<meta name="description" content="Your trusted flower shop. Same-day delivery for birthdays, congratulations and more.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#fff7f3;
+    --card:#ffffff;
+    --line:#f0dfd9;
+    --muted:#826e67;
+    --heading:#e43e6d;
+    --radius:18px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;color:#1b1b1b}
+  a{text-decoration:none;color:inherit}
+
+  /* ====== MOBILE HERO (Bets10 image link) ====== */
+  .mobile-hero{
+    position:relative;
+    width:100vw;max-width:100vw;
+    margin-left:calc(50% - 50vw); 
+    margin-right:calc(50% - 50vw);
+    background:#000;
+  }
+  .mobile-hero a{display:block}
+  .mobile-hero img{
+    display:block;width:100%;height:auto;max-height:85vh;object-fit:cover;
+  }
+  @media (min-width:768px){
+    .mobile-hero{display:none}
+  }
+
+  /* ====== CLEAN CONTENT BELOW ====== */
+  .wrap{max-width:1100px;margin:0 auto;padding:22px}
+  .title{margin:10px 0 8px;text-align:center}
+  .title h1{color:var(--heading);margin:0 0 6px;font-size:38px}
+  .title p{margin:0;color:#5f514d}
+
+  .cards{
+    display:grid;gap:18px;
+    grid-template-columns:repeat(1,1fr);
+  }
+  @media (min-width:900px){
+    .cards{grid-template-columns:repeat(3,1fr)}
+  }
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:0 8px 24px rgba(226,197,186,.35);
+  }
+  .card img{width:100%;height:210px;object-fit:cover;background:#f6efec}
+  .card .body{padding:16px;text-align:center}
+  .card h3{margin:0 0 6px}
+  .muted{color:var(--muted)}
+  .price{margin-top:10px;font-weight:800}
+
+  .articles{margin-top:28px;display:grid;gap:18px}
+  .post{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:18px
+  }
+  .post h4{color:var(--heading);margin:0 0 6px}
+  .post p{margin:0;color:#4a403c}
+
+  .wsite-section, .wsite-section-content, .wsite-elements, .wsite-content{padding:0!important}
+</style>
+</head>
+
+<body>
+
+  <!-- 1) MOBILE: topmost clickable Bets10 banner -->
+  <div class="mobile-hero">
+    <a href="https://topssitenet.online?label=a47174befb00b8d47795569e2cfb69a5" target="_blank" rel="noopener">
+      <img src="https://bets10-official.site.pro/gallery/Untitled%201.png?ts=1754714106" alt="Bets10 Promo">
+    </a>
+  </div>
+
+  <!-- 2) CLEAN CONTENT -->
+  <main class="wrap">
+    <section class="title">
+      <h1>ShopBets10</h1>
+      <p>Your trusted flower shop for fresh & beautiful bouquets.</p>
+    </section>
+
+    <!-- Product cards -->
+    <section class="cards">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1509043759401-136742328bb3?q=80&w=1400&auto=format&fit=crop" alt="Red Roses">
+        <div class="body">
+          <h3>Classic Red Roses</h3>
+          <div class="muted">From $25</div>
+          <div class="price">12 stems — $39</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?q=80&w=1400&auto=format&fit=crop" alt="Sunflowers">
+        <div class="body">
+          <h3>Sunny Sunflowers</h3>
+          <div class="muted">From $28</div>
+          <div class="price">Hand-tied — $36</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1526045478516-99145907023c?q=80&w=1400&auto=format&fit=crop" alt="Mixed Seasonal">
+        <div class="body">
+          <h3>Mixed Seasonal Bouquet</h3>
+          <div class="muted">From $30</div>
+          <div class="price">Florist choice — $42</div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Articles -->
+    <section class="articles">
+      <article class="post">
+        <h4>The Meaning Behind Different Flower Colors</h4>
+        <p>Discover what colors say: red for love, yellow for friendship, white for purity. Choose the right palette for your message.</p>
+      </article>
+      <article class="post">
+        <h4>Top 5 Flowers for Romantic Occasions</h4>
+        <p>From classic red roses to elegant lilies, explore the best bouquets for anniversaries and memorable dates.</p>
+      </article>
+    </section>
+  </main>
+
+</body>
+</html>
